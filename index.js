@@ -55,3 +55,32 @@ const n9 = 7;
 const n10 = 7;
 
 console.log(n9 >= n10);
+
+// 9) && ------ "AND" ------ (a > c) && (b < d) ------ verdadeiro quando as duas expressões forem verdadeiras
+
+const num_1 = 2;
+const num_2 = 2;
+
+console.log(num_1 === num_2 && num_1 <= num_2);  // V & V = V
+
+console.log(num_1 === num_2 && num_1 < num_2);   // V & F = F
+
+console.log(num_1 > num_2 && num_1 === num_2);   // F & V = F
+
+console.log(num_1 > num_2 && num_1 < num_2);     // F & F = F
+
+// 10) || ------ "OR" ----- (a > c) || (b < d) ------ falso quando as duas expressões forem falsas
+
+console.log(num_1 === num_2 || num_1 <= num_2);  // V OU V = V
+
+console.log(num_1 === num_2 || num_1 < num_2);   // V OU F = V
+
+console.log(num_1 > num_2 || num_1 === num_2);   // F OU V = V
+
+console.log(num_1 > num_2 || num_1 < num_2);     // F OU F = F
+
+// 11) ! ---- NOT ----- INVERTE A EXPRESSÃO ----- (!(a === b)) ----- VERDADEIRO VIRA FALSO E VICE-VERSA 
+
+console.log(num_1 === num_2); // TRUE
+
+console.log(!(num_1 === num_2)); // FALSE - "!" INVERTE RESULTADO BOOLEANO
